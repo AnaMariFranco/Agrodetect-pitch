@@ -121,7 +121,7 @@ export function Dashboard({ onNavigateToResults, onLogout }: DashboardProps) {
                 <Button
                   variant={activeTab === 'dashboard' ? 'default' : 'ghost'}
                   onClick={() => setActiveTab('dashboard')}
-                  className={activeTab === 'dashboard' ? 'bg-[#00C853] hover:bg-[#00B349]' : ''}
+                  className={activeTab === 'dashboard' ? 'bg-[#00C853] hover:bg-[#047857]' : ''}
                 >
                   <BarChart3 className="w-4 h-4 mr-2" />
                   Dashboard
@@ -129,7 +129,7 @@ export function Dashboard({ onNavigateToResults, onLogout }: DashboardProps) {
                 <Button
                   variant={activeTab === 'upload' ? 'default' : 'ghost'}
                   onClick={() => setActiveTab('upload')}
-                  className={activeTab === 'upload' ? 'bg-[#00C853] hover:bg-[#00B349]' : ''}
+                  className={activeTab === 'upload' ? 'bg-[#00C853] hover:bg-[#047857]' : ''}
                 >
                   <Upload className="w-4 h-4 mr-2" />
                   Novo Upload
@@ -137,7 +137,7 @@ export function Dashboard({ onNavigateToResults, onLogout }: DashboardProps) {
                 <Button
                   variant={activeTab === 'history' ? 'default' : 'ghost'}
                   onClick={() => setActiveTab('history')}
-                  className={activeTab === 'history' ? 'bg-[#00C853] hover:bg-[#00B349]' : ''}
+                  className={activeTab === 'history' ? 'bg-[#00C853] hover:bg-[#047857]' : ''}
                 >
                   <Clock className="w-4 h-4 mr-2" />
                   Histórico
@@ -145,7 +145,7 @@ export function Dashboard({ onNavigateToResults, onLogout }: DashboardProps) {
                 <Button
                   variant={activeTab === 'plans' ? 'default' : 'ghost'}
                   onClick={() => setActiveTab('plans')}
-                  className={activeTab === 'plans' ? 'bg-[#00C853] hover:bg-[#00B349]' : ''}
+                  className={activeTab === 'plans' ? 'bg-[#00C853] hover:bg-[#047857]' : ''}
                 >
                   <CreditCard className="w-4 h-4 mr-2" />
                   Planos
@@ -153,7 +153,7 @@ export function Dashboard({ onNavigateToResults, onLogout }: DashboardProps) {
                 <Button
                   variant={activeTab === 'settings' ? 'default' : 'ghost'}
                   onClick={() => setActiveTab('settings')}
-                  className={activeTab === 'settings' ? 'bg-[#00C853] hover:bg-[#00B349]' : ''}
+                  className={activeTab === 'settings' ? 'bg-[#00C853] hover:bg-[#047857]' : ''}
                 >
                   <Settings className="w-4 h-4 mr-2" />
                   Configurações
@@ -310,7 +310,7 @@ export function Dashboard({ onNavigateToResults, onLogout }: DashboardProps) {
                   <div className="text-sm text-gray-500">
                     Formatos aceitos: JPG, PNG, TIFF (máx. 10MB)
                   </div>
-                  <Button className="mt-6 bg-[#00C853] hover:bg-[#00B349]">
+                  <Button className="mt-6 bg-[#00C853] hover:bg-[#047857]">
                     Selecionar Arquivos
                   </Button>
                 </div>
@@ -459,7 +459,7 @@ export function Dashboard({ onNavigateToResults, onLogout }: DashboardProps) {
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00C853]"
                   />
                 </div>
-                <Button className="bg-[#00C853] hover:bg-[#00B349]">
+                <Button className="bg-[#00C853] hover:bg-[#047857]">
                   Salvar Alterações
                 </Button>
               </CardContent>
@@ -479,7 +479,7 @@ export function Dashboard({ onNavigateToResults, onLogout }: DashboardProps) {
                     </div>
                   </div>
                 </div>
-                <Button className="bg-[#00C853] hover:bg-[#00B349]">
+                <Button className="bg-[#00C853] hover:bg-[#047857]">
                   Atualizar Logo
                 </Button>
               </CardContent>

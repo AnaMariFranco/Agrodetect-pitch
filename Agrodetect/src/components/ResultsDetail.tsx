@@ -76,7 +76,7 @@ export function ResultsDetail({ analysisId, onBackToDashboard, onNavigateToRepor
                 <FileText className="w-4 h-4 mr-2" />
                 Exportar Dados
               </Button>
-              <Button onClick={() => onNavigateToReport(analysisId)} className="bg-[#00C853] hover:bg-[#00B349]">
+              <Button onClick={() => onNavigateToReport(analysisId)} className="bg-[#00C853] hover:bg-[#047857]">
                 <Download className="w-4 h-4 mr-2" />
                 Baixar Relatório PDF
               </Button>
@@ -408,7 +408,7 @@ export function ResultsDetail({ analysisId, onBackToDashboard, onNavigateToRepor
             <Button variant="outline">
               Agendar Consultoria
             </Button>
-            <Button onClick={() => onNavigateToReport(analysisId)} className="bg-[#00C853] hover:bg-[#00B349]">
+            <Button onClick={() => onNavigateToReport(analysisId)} className="bg-[#00C853] hover:bg-[#047857]">
               <Download className="w-4 h-4 mr-2" />
               Baixar Relatório Completo
             </Button>

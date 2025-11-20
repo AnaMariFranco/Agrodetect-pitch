@@ -2,7 +2,7 @@ import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Check, Brain, AlertTriangle, BarChart3, FileText, Upload, Cpu, Download, Zap, Shield, TrendingUp, Users } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+// imagem do hero removida — import desnecessário removido
 
 interface LandingPageProps {
   onNavigateToLogin: () => void;
@@ -25,59 +25,53 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
             <a href="#como-funciona" className="text-gray-600 hover:text-[#00C853] transition-colors">Como Funciona</a>
             <a href="#precos" className="text-gray-600 hover:text-[#00C853] transition-colors">Preços</a>
             <Button variant="outline" onClick={onNavigateToLogin}>Entrar</Button>
-            <Button onClick={onNavigateToLogin} className="bg-[#00C853] hover:bg-[#00B349]">
+            <Button onClick={onNavigateToLogin} className="bg-[#00C853] hover:bg-[#047857]">
               Começar Agora
             </Button>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-[#E6F7F1] to-white">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <Badge className="mb-4 bg-[#00C853] text-white hover:bg-[#00B349]">
-              Agricultura de Precisão
-            </Badge>
-            <h1 className="text-5xl mb-6 text-gray-900">
+      {/* Hero Section - texto à esquerda, estatísticas empilhadas à direita */}
+      <section className="pt-32 md:pt-36 pb-16 px-6 bg-gradient-to-b from-[#E6F7F1] to-white">
+        <div className="max-w-7xl mx-auto md:flex md:items-start md:gap-8 md:justify-between">
+          {/* Coluna da esquerda: título, descrição e CTAs */}
+          <div className="w-full md:w-3/4 text-left">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl leading-tight mb-6 text-gray-900">
               Contagem Automática de Nematoides com Inteligência Artificial
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Transforme imagens microscópicas em relatórios agronômicos precisos em segundos. Identifique espécies, monitore infestações e tome decisões de manejo baseadas em dados.
+            <p className="text-base md:text-lg text-gray-600 mb-6 max-w-2xl">
+              Transforme imagens microscópicas em relatórios agronômicos precisos em minutos. Identifique espécies, monitore infestações e tome decisões de manejo baseadas em dados.
             </p>
-            <p className="text-lg text-gray-700 mb-8 italic">
-              "O AgroDetect não substitui o profissional - ele potencializa sua eficiência e precisão."
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button onClick={onNavigateToLogin} size="lg" className="bg-[#00C853] hover:bg-[#00B349]">
+
+            <div className="flex flex-wrap gap-4 items-center">
+              <Button onClick={onNavigateToLogin} size="lg" className="bg-[#00C853] hover:bg-[#047857]">
                 Ver Planos e Preços
               </Button>
               <Button onClick={onNavigateToLogin} size="lg" variant="outline">
                 Agendar Demonstração
               </Button>
             </div>
-            <div className="mt-8 flex items-center gap-8">
-              <div>
-                <div className="text-3xl text-[#00C853]">90%</div>
+          </div>
+
+          {/* Coluna da direita: estatísticas empilhadas verticalmente */}
+          <div className="w-full md:w-1/4 mt-8 md:mt-0 md:pr-8 lg:pr-12">
+            <div className="h-full flex flex-col justify-start items-end gap-8 w-full">
+              <div className="w-full md:max-w-xs md:text-right text-right">
+                <div className="text-3xl md:text-4xl lg:text-5xl text-[#00C853] font-semibold">90%</div>
                 <div className="text-gray-600">Redução no tempo</div>
               </div>
-              <div>
-                <div className="text-3xl text-[#00C853]">99%</div>
+
+              <div className="w-full md:max-w-xs md:text-right text-right">
+                <div className="text-3xl md:text-4xl lg:text-5xl text-[#00C853] font-semibold">99%</div>
                 <div className="text-gray-600">Precisão da IA</div>
               </div>
-              <div>
-                <div className="text-3xl text-[#00C853]">10-30min</div>
-                <div className="text-gray-600">Para segundos</div>
+
+              <div className="w-full md:max-w-xs md:text-right text-right">
+                <div className="text-3xl md:text-4xl lg:text-5xl text-[#00C853] font-semibold">10-30min</div>
+                <div className="text-gray-600">Para poucos minutos</div>
               </div>
             </div>
-          </div>
-          <div className="relative">
-            <div className="absolute inset-0 bg-[#00C853] rounded-3xl blur-3xl opacity-20"></div>
-            <ImageWithFallback 
-              src="https://images.unsplash.com/photo-1758521961744-939de61d5cb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBsYXB0b3B8ZW58MXx8fHwxNzYzNTY0NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Dashboard Preview"
-              className="relative rounded-2xl shadow-2xl"
-            />
           </div>
         </div>
       </section>
@@ -158,7 +152,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Reduza análises de 30 minutos para segundos
+                  Reduza análises de 30 minutos para 5 minutos.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -349,7 +343,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
                 </ul>
               </CardContent>
               <CardFooter className="mt-auto">
-                <Button onClick={onNavigateToLogin} className="w-full bg-[#00C853] hover:bg-[#00B349]">
+                <Button onClick={onNavigateToLogin} className="w-full bg-[#00C853] hover:bg-[#047857]">
                   Começar Agora
                 </Button>
               </CardFooter>
@@ -359,7 +353,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
             <Card className="border-2 flex flex-col">
               <CardHeader>
                 <CardTitle>Enterprise</CardTitle>
-                <CardDescription>Personalizado de acordo com a preferência de cada cliente</CardDescription>
+                <CardDescription></CardDescription>
                 <div className="mt-4">
                   <span className="text-4xl text-gray-900">Personalizado</span>
                 </div>
@@ -368,31 +362,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-[#00C853] mt-0.5 flex-shrink-0" />
-                    <span>Créditos ilimitados</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-[#00C853] mt-0.5 flex-shrink-0" />
-                    <span>Tudo do plano Profissional</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-[#00C853] mt-0.5 flex-shrink-0" />
-                    <span>Integração personalizada</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-[#00C853] mt-0.5 flex-shrink-0" />
-                    <span>Treinamento da IA customizado</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-[#00C853] mt-0.5 flex-shrink-0" />
-                    <span>Gerente de conta dedicado</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-[#00C853] mt-0.5 flex-shrink-0" />
-                    <span>SLA garantido</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-[#00C853] mt-0.5 flex-shrink-0" />
-                    <span>Suporte 24/7</span>
+                    <span>Personalizado de acordo com a preferência do cliente.</span>
                   </li>
                 </ul>
               </CardContent>
@@ -477,10 +447,10 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
             Junte-se a centenas de laboratórios que já economizam tempo e aumentam a precisão com AgroDetect
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button onClick={onNavigateToLogin} size="lg" className="bg-white text-[#00C853] hover:bg-gray-100">
+            <Button onClick={onNavigateToLogin} size="lg" className="bg-[#00C853] text-white border-transparent">
               Começar Agora
             </Button>
-            <Button onClick={onNavigateToLogin} size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+            <Button onClick={onNavigateToLogin} size="lg" className="bg-[#00C853] text-white border-transparent">
               Agendar Demonstração
             </Button>
           </div>

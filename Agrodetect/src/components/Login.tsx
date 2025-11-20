@@ -94,7 +94,7 @@ export function Login({ onLoginSuccess, onBackToHome }: LoginProps) {
                   </div>
                   <Button 
                     type="submit" 
-                    className="w-full bg-[#00C853] hover:bg-[#00B349]"
+                    className="w-full bg-[#00C853] hover:bg-[#047857]"
                     disabled={isLoading}
                   >
                     {isLoading ? 'Entrando...' : 'Entrar'}
@@ -159,7 +159,7 @@ export function Login({ onLoginSuccess, onBackToHome }: LoginProps) {
                   </div>
                   <Button 
                     type="submit" 
-                    className="w-full bg-[#00C853] hover:bg-[#00B349]"
+                    className="w-full bg-[#00C853] hover:bg-[#047857]"
                     disabled={isLoading}
                   >
                     {isLoading ? 'Criando conta...' : 'Criar Conta'}

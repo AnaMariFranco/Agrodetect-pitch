@@ -187,3 +187,26 @@
 html {
   font-size: var(--font-size);
 }
+
+.exposed-btn {
+  background-color: #10b981 !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+  outline: none !important;
+}
+.exposed-btn:hover,
+.exposed-btn:focus,
+.exposed-btn:active {
+  background-color: #047857 !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+}
+.exposed-btn svg {
+  fill: currentColor;
+  color: inherit;
+}

@@ -43,7 +43,7 @@ export function ReportGenerator({ analysisId, onBack }: ReportGeneratorProps) {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Voltar aos Resultados
             </Button>
-            <Button onClick={handleDownload} className="bg-[#00C853] hover:bg-[#00B349]">
+            <Button onClick={handleDownload} className="bg-[#00C853] hover:bg-[#047857]">
               <Download className="w-4 h-4 mr-2" />
               Baixar Relatório PDF
             </Button>
@@ -296,7 +296,7 @@ export function ReportGenerator({ analysisId, onBack }: ReportGeneratorProps) {
                     <div className="text-center">
                       <Button 
                         onClick={handleDownload}
-                        className="w-full bg-[#00C853] hover:bg-[#00B349]"
+                        className="w-full bg-[#00C853] hover:bg-[#047857]"
                       >
                         <Download className="w-4 h-4 mr-2" />
                         Gerar PDF
