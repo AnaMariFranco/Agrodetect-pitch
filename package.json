@@ -1,0 +1,18 @@
+{
+  "name": "agrodetect-pitch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "cd Agrodetect && npm run build",
+    "deploy": "cd Agrodetect && gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "http://anamarifranco.github.io/Agrodetect-pitch/",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
