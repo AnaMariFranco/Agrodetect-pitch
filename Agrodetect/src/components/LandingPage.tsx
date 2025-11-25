@@ -36,7 +36,7 @@ export function LandingPage({ onNavigateToLogin }: LandingPageProps) {
       <section className="pt-32 md:pt-36 pb-16 px-6 bg-gradient-to-b from-[#E6F7F1] to-white">
         <div className="max-w-7xl mx-auto md:flex md:items-start md:gap-8 md:justify-between">
           {/* Coluna da esquerda: título, descrição e CTAs */}
-          <div className="w-full md:w-3/4 text-left">
+          <div className="w-full flex flex-col justify-between md:w-3/4 text-left">
             <h1 className="text-3xl md:text-5xl lg:text-6xl leading-tight mb-6 text-gray-900">
               Contagem Automática de Nematoides com Inteligência Artificial
             </h1>
